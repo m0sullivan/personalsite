@@ -58,13 +58,13 @@
 					<a href="https://github.com/m0sullivan/Twitter-Bot-Framework"><span class="hover:text-[#66F217]">-> Twitter Bot</span></a>
 					<br>
 				</h1>
-				<div class="backdrop-blur-[3px] rounded-lg p-6 m-3 py-28">
+				<div class="backdrop-blur-[3px] p-6 m-3 py-28 outline outline-1">
 					​<SC.Canvas antialias background={new THREE.Color(null, null, null)}>
 						<SC.Mesh
 							geometry={new THREE.BoxGeometry()}
 							material={new THREE.MeshStandardMaterial({ color: 0x66F217 })}
 							scale={[width, height, depth]}
-							rotation={[0, spin, 0]}
+							rotation={[0, spin, spin]}
 						/>
 						<SC.PerspectiveCamera position={[1, 1, 3]} />
 						<SC.OrbitControls enableZoom={false} />

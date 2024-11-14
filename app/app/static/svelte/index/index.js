@@ -81938,7 +81938,7 @@ void main() {
     				geometry: new BoxGeometry(),
     				material: new MeshStandardMaterial({ color: 0x66F217 }),
     				scale: [/*width*/ ctx[2], /*height*/ ctx[3], /*depth*/ ctx[4]],
-    				rotation: [0, /*spin*/ ctx[0], 0]
+    				rotation: [0, /*spin*/ ctx[0], /*spin*/ ctx[0]]
     			},
     			$$inline: true
     		});
@@ -81991,7 +81991,7 @@ void main() {
     		},
     		p: function update(ctx, dirty) {
     			const sc_mesh_changes = {};
-    			if (dirty & /*spin*/ 1) sc_mesh_changes.rotation = [0, /*spin*/ ctx[0], 0];
+    			if (dirty & /*spin*/ 1) sc_mesh_changes.rotation = [0, /*spin*/ ctx[0], /*spin*/ ctx[0]];
     			sc_mesh.$set(sc_mesh_changes);
     		},
     		i: function intro(local) {
@@ -82217,7 +82217,7 @@ void main() {
     			add_location(br6, file$1, 58, 5, 2128);
     			attr_dev(h15, "class", "text-4xl text-white font-bold text-start rounded p-3");
     			add_location(h15, file$1, 54, 4, 1835);
-    			attr_dev(div5, "class", "backdrop-blur-[3px] rounded-lg p-6 m-3 py-28");
+    			attr_dev(div5, "class", "backdrop-blur-[3px] p-6 m-3 py-28 outline outline-1");
     			add_location(div5, file$1, 60, 4, 2149);
     			attr_dev(div6, "class", "backdrop-blur-[3px] rounded-lg p-6 m-3");
     			add_location(div6, file$1, 50, 3, 1678);
@@ -82226,7 +82226,7 @@ void main() {
     			attr_dev(div8, "class", "p-10 col-span-3");
     			add_location(div8, file$1, 23, 1, 499);
     			attr_dev(div9, "class", "col-span-1");
-    			add_location(div9, file$1, 78, 1, 2773);
+    			add_location(div9, file$1, 78, 1, 2783);
     			attr_dev(main, "class", "grid grid-cols-5 h-screen w-screen text-white bg-[radial-gradient(#3e3e3e_1px,transparent_1px)] [background-size:16px_16px]");
     			add_location(main, file$1, 20, 0, 322);
     		},
