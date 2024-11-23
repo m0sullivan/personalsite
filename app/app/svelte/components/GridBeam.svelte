@@ -40,7 +40,7 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       class="absolute top-0 left-0"
-      opacity={opacity1 == 1 ? '1' : '0'}
+      opacity={opacity1 == 1 ? '0.3' : '0'}
     >
 
 

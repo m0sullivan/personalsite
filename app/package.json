@@ -32,8 +32,10 @@
     "svelte-navigator": "^3.2.2",
     "tailwind-merge": "^2.5.4",
     "three": "^0.170.0",
+    "three-asciieffect": "^1.0.1",
     "timers": "^0.1.1",
     "timers-promises": "^1.0.1",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "typewriter-effect": "^2.21.0"
   }
 }
