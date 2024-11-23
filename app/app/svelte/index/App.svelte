@@ -2,6 +2,9 @@
 	import { Router, Route, Link } from "svelte-navigator";
 	import Home from "./Home.svelte";
 </script>
+<svelte:head>
+	<title>m0sullivan</title>
+</svelte:head>
 <Router>
 	<main>
 		<Route>
