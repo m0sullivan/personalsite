@@ -1,4 +1,5 @@
 from flask import Flask, send_from_directory
+from gevent.pywsgi import WSGIServer
 
 from flask_svelte import render_template
 
@@ -13,4 +14,6 @@ def index():
 def home(path):
     return send_from_directory('public', path)
 
-app.run('0.0.0.0', debug=False, port=80, use_reloader=False)
+if __name__ == '__main__':
+    http_server = WSGIServer(('', 5000), app)
+    http_server.serve_forever()
