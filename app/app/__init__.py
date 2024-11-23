@@ -12,3 +12,5 @@ def index():
 @app.route("/public/<path:path>")
 def home(path):
     return send_from_directory('public', path)
+
+app.run('0.0.0.0', debug=False, port=80, use_reloader=False)
